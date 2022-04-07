@@ -1,0 +1,38 @@
+export const data = [
+  {
+    address: 'Karol Bagh, Delhi',
+    hotel_images: [
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/3ccd42b4174b4448.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/cbac79414e3c45ee.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/64c5c10785651ea2.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/eaf83efecb3d4042.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/fc64e1964b6e6bea.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/5bec2ff99b603171.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/fc5ba71295e827b6.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/b2774ed12db5afd3.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/a474dff749a1236c.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/a81bc054c23015e6.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/78e6b371d0371c83.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/d4fffdafb69aab66.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/3dab1aafe820ae7b.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/751e9ff345628cbc.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/aa775ae4e6bfab2c.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/8ac74e2cd7946b3e.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/18f3907f2601da24.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/52ffe8418a18c0c6.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/2fde1c71a1f06085.jpg',
+      'https://images.oyoroomscdn.com/uploads/hotel_image/83098/3e4cac53f1b0b437.jpg',
+    ],
+    name: 'OYO 61891 Hotel Kabila',
+    pricing: {
+      bookingPrice: '899',
+      discountPercentage: 70,
+      slashedPrice: '3035',
+    },
+    rating: {
+      count: 2123,
+      value: 4.6,
+    },
+    urgency_info: 'Hurry, Only 1 room left!',
+  },
+];

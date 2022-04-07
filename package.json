@@ -1,0 +1,42 @@
+{
+  "name": "react-native-project",
+  "version": "1.0.0",
+  "main": "./testComponent.js",
+  "scripts": {
+    "start2": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "start": "webpack serve  --hot --open",
+    "webbuild": "webpack --config webpack.config.js --mode production"
+  },
+  "dependencies": {
+    "expo": "~44.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-native-web": "^0.17.7"
+  },
+  "peerDepedencies": {
+    "react-native": "0.64.3",
+    "react-native-web": "0.17.1",
+    "react-dom": "17.0.1",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "private": false
+}
