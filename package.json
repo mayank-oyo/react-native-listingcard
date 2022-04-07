@@ -1,7 +1,7 @@
 {
   "name": "react-native-project",
   "version": "1.0.0",
-  "main": "./testComponent.js",
+  "main": "./POC1.js",
   "scripts": {
     "start2": "expo start",
     "android": "expo start --android",
