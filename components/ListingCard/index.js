@@ -1,9 +1,20 @@
-import React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import React, { useEffect } from 'react';
+import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import HotelCarousel from './HotelCarousel';
 import RatingComp from './RatingComp';
+import { Button } from 'react-native';
 
-export default function ListingCard({ data }) {
+
+export default function ListingCard({
+  data,
+  listingCardOnClick,
+  ratingOnClick,
+  widgetViewGa,
+  primaryCta,
+  secondaryCta,
+  primaryCtaHandler,
+  secondaryCtaHandler
+}) {
   const {
     hotel_images,
     name,
@@ -11,11 +22,17 @@ export default function ListingCard({ data }) {
     urgency_info: urgencyInfo,
     pricing: { bookingPrice, discountPercentage, slashedPrice },
     rating,
+    id
   } = data;
+
+  useEffect(() => {
+    widgetViewGa && widgetViewGa();
+  },[]);
+
   return (
-    <View style={styles.listingCard}>
+    <View style={styles.listingCard} onClick={listingCardOnClick}>
       <HotelCarousel images={hotel_images} />
-      <RatingComp rating={rating} />
+      <RatingComp rating={rating} ratingOnClick={ratingOnClick}/>
       <View style={styles.innerWrapper}>
         <Text style={styles.textClass}>{name}</Text>
         <Text style={styles.addressClass}>{address}</Text>
@@ -24,6 +41,14 @@ export default function ListingCard({ data }) {
           <Text style={styles.bookingPriceClass}>{bookingPrice}</Text>
           <Text style={styles.slashedPriceClass}>{slashedPrice}</Text>
           <Text style={styles.discountClass}>{discountPercentage}% off</Text>
+        </View>
+        <View style={styles.fixToText}>
+        <TouchableOpacity onPress={primaryCtaHandler}>
+            <Text style={styles.primaryBtnClass}>{primaryCta}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={secondaryCtaHandler}>
+            <Text style={styles.secondaryBtnClass}>{secondaryCta}</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -95,4 +120,23 @@ const styles = StyleSheet.create({
     letterSpacing: '0.2px',
     color: 'rgb(0, 178, 138)',
   },
+  fixToText: {
+    flexDirection: 'row',
+    marginTop: '8px'
+  },
+  primaryBtnClass: {
+    backgroundColor: '#1ab64f',
+    color: '#fff',
+    borderRadius: '2px',
+    border: '1px solid #1ab64f',
+    padding: '8px'
+  },
+  secondaryBtnClass: {
+    backgroundColor: '#fff',
+    color: '#222',
+    borderRadius: '2px',
+    border: '1px solid #222',
+    padding: '8px',
+    marginLeft: '8px'
+  }
 });

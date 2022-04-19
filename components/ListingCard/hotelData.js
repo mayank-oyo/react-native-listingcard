@@ -1,5 +1,6 @@
 export const data = [
   {
+    id: 83098,
     address: 'Karol Bagh, Delhi',
     hotel_images: [
       'https://images.oyoroomscdn.com/uploads/hotel_image/83098/3ccd42b4174b4448.jpg',

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image, FlatList } from 'react-native';
 
-export default function RatingComp({ rating }) {
+export default function RatingComp({ rating, ratingOnClick }) {
   return (
-    <View style={styles.ratingContainer}>
+    <View style={styles.ratingContainer} onClick={ratingOnClick}>
       <View style={styles.ratingInner}>
         <Text style={styles.valueClass}>★ {rating.value}</Text>
         <Text style={styles.countClass}> ({rating.count})</Text>
