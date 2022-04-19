@@ -30,7 +30,7 @@ export default function ListingCard({
   },[]);
 
   return (
-    <View style={styles.listingCard} onClick={listingCardOnClick}>
+    <View style={styles.listingCard} id={id} onClick={listingCardOnClick}>
       <HotelCarousel images={hotel_images} />
       <RatingComp rating={rating} ratingOnClick={ratingOnClick}/>
       <View style={styles.innerWrapper}>
